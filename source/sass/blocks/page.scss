@@ -1,0 +1,9 @@
+.page {
+  font-family: PT Sans;
+  @include fontSizeHeightWeight(14px, 21px);
+}
+
+.page__body {
+  margin: 0;
+  padding: 0;
+}

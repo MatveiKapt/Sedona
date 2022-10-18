@@ -1,0 +1,10 @@
+$basic-color: #81B3D2;
+$secondary-color: #333333;
+$input-bg: #F2F2F2;
+$fieldset-border: #E5E5E5;
+
+@mixin  fontSizeHeightWeight ($size, $height, $weight: 400) {
+  font-size: $size;
+  line-height: $height;
+  font-weight: $weight;
+}

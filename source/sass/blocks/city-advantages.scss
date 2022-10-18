@@ -1,0 +1,15 @@
+.city-advantages {
+  list-style: none;
+  background-color: #fff;
+  text-transform: uppercase;
+}
+
+.city-advantages__title {
+  @include fontSizeHeightWeight(18px, 15px, 700);
+  color: #000;
+}
+
+.city-advantages__text {
+  @include fontSizeHeightWeight(21px, 26px);
+  color: $secondary-color;
+}

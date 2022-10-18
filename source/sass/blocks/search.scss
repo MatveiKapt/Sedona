@@ -1,0 +1,13 @@
+.search {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.search__title {
+  @include fontSizeHeightWeight(21px, 18px, 700);
+}
+
+.search__text {
+  @include fontSizeHeightWeight(14px, 24px);
+  color: $secondary-color;
+}

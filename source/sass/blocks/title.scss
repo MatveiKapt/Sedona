@@ -1,0 +1,4 @@
+.title {
+  @include fontSizeHeightWeight(21px, 26px, 700);
+  text-transform: uppercase;
+}

@@ -1,0 +1,8 @@
+.input-textarea {
+  background-color: $input-bg;
+
+  &::placeholder {
+    @include fontSizeHeightWeight(18px, 26px, 700);
+    color: #000;
+  }
+}

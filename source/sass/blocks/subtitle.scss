@@ -1,0 +1,5 @@
+.subtitle {
+  @include fontSizeHeightWeight(14px, 26px);
+  color: $secondary-color;
+  text-transform: uppercase;
+}
