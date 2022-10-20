@@ -1,0 +1,24 @@
+.gallery-item {
+  @include fontSizeHeightWeight(14px, 24px);
+  border-top: 1px solid $fieldset-border;
+
+  &:last-child {
+    border-bottom: 1px solid $fieldset-border;
+  }
+}
+
+.gallery-item__title {
+  @include fontSizeHeightWeight(inherit, inherit, 700);
+  text-transform: uppercase;
+}
+
+.gallery-item__author {
+  color: $secondary-color;
+}
+
+.gallery-item__button {
+  font-family: "PT Sans";
+  @include fontSizeHeightWeight(inherit, inherit, 700);
+  border: none;
+  background: transparent;
+}
