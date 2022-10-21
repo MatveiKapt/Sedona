@@ -1,6 +1,6 @@
 .button {
   @include fontSizeHeightWeight(21px, 26px, 700);
-  color: #fff;
+  color: $white;
   text-transform: uppercase;
   background-color: $basic-color;
   border: none;

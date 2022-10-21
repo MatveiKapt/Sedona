@@ -1,16 +1,22 @@
 .advantage {
-  text-align: center;
-  background-color: #eee;
+  background-color: $grey;
   text-transform: uppercase;
 }
 .advantage--bg {
   background-color: $basic-color;
-  color: #fff;
+  color: $white;
   border: none;
 }
 .advantage--bg .advantage__number,
 .advantage--bg .advantage__text {
-  color: #fff;
+  color: $white;
+}
+
+.advantage__wrapper {
+  @media (min-width: $tablet-width) {
+    width: 696px;
+    margin: 0 auto;
+  }
 }
 
 .advantage__title {
@@ -28,6 +34,5 @@
 }
 
 .advantage__sublist {
-  margin: 0;
   padding: 0;
 }

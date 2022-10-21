@@ -1,7 +1,19 @@
+// Colors
+
 $basic-color: #81B3D2;
 $secondary-color: #333333;
 $input-bg: #F2F2F2;
 $fieldset-border: #E5E5E5;
+$black: #000000;
+$white: #ffffff;
+$grey: #eeeeee;
+
+// Media
+
+$tablet-width: 768px;
+$desktop-width: 1280px;
+
+// Mixins
 
 @mixin  fontSizeHeightWeight ($size, $height, $weight: 400) {
   font-size: $size;
