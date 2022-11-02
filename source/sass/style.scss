@@ -9,16 +9,20 @@
 
 @import "blocks/page.scss";
 @import "blocks/page-header.scss";
-@import "blocks/main-logo.scss";
 @import "blocks/main-nav.scss";
+@import "blocks/main-logo.scss";
+@import "blocks/header-text.scss";
+@import "blocks/page-main.scss";
 @import "blocks/intro.scss";
 @import "blocks/title.scss";
 @import "blocks/subtitle.scss";
 @import "blocks/advantages.scss";
+@import "blocks/advantages-list.scss";
 @import "blocks/advantage.scss";
 @import "blocks/city-advantages.scss";
 @import "blocks/search.scss";
 @import "blocks/button.scss";
+@import "blocks/map.scss";
 @import "blocks/page-footer.scss";
 @import "blocks/socials.scss";
 @import "blocks/copyright.scss";
@@ -32,5 +36,6 @@
 @import "blocks/gallery-item.scss";
 
 @import "blocks/container.scss";
+@import "blocks/mobile-br.scss";
 
 

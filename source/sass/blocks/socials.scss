@@ -1,13 +1,33 @@
 .socials {
-
 }
 
 .socials__list {
+  display: flex;
+  gap: 6px;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .socials__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 46px;
+  height: 48px;
   background-color: $basic-color;
+
+  &:hover {
+    background-color: $basic-color-hover;
+  }
+  &:active {
+    background-color: $basic-color-active;
+  }
+  &:active .socials__icon {
+    opacity: 0.3;
+  }
+}
+
+.socials__icon {
+
 }

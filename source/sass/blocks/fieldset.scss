@@ -1,27 +1,32 @@
 .fieldset {
   border: none;
   border-top: 1px solid $fieldset-border;
-
-  &--impression {
-    @media (min-width: $tablet-width) {
-      order: -1;
-    }
-  }
-
-  &--contacts,
-  &--attractions,
-  &--emotions {
-    @media (min-width: $tablet-width) {
-      grid-column: 1 / -1;
-    }
-  }
 }
 
+.fieldset__inner {
+  width: 280px;
+  margin: 0 auto;
+}
 
 .fieldset__list {
   margin: 0;
   padding: 0;
   list-style: none;
+
+  &--contacts {
+    @media (min-width: $desktop-width) {
+      display: flex;
+    }
+  }
+  &--attractions {
+    @media (min-width: $tablet-width) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    @media (min-width: $desktop-width) {
+      display: flex;
+    }
+  }
 }
 
 .fieldset__title {

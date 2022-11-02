@@ -1,10 +1,18 @@
 .input-text {
-
+  &--yourself {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+  }
 }
 
 .input-text__input {
+  padding: 18px 5px 14px 22px;
+  width: 205px;
   background-color: $input-bg;
   border: none;
+  @include fontSizeHeightWeight(18px, 26px, 700);
+  color: $black;
 
   &::placeholder {
     @include fontSizeHeightWeight(18px, 26px, 700);

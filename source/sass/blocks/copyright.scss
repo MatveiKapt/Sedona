@@ -1,4 +1,11 @@
 .copyright {
+  display: flex;
+  align-items: center;
   @include fontSizeHeightWeight(14px, 26px);
   text-transform: uppercase;
+}
+
+.copyright__logo {
+  width: 26.9px;
+  height: 34.1px;
 }

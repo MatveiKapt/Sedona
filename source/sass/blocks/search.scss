@@ -1,13 +1,24 @@
 .search {
+  width: 280px;
+  padding-top: 33px;
   text-transform: uppercase;
   text-align: center;
 }
 
+.search__content-wrapper {
+  width: 261px;
+  margin: 0 auto;
+}
+
 .search__title {
+  margin: 0;
+  margin-bottom: 15px;
   @include fontSizeHeightWeight(21px, 18px, 700);
 }
 
 .search__text {
+  margin: 0;
+  margin-bottom: 15px;
   @include fontSizeHeightWeight(14px, 24px);
   color: $secondary-color;
 }

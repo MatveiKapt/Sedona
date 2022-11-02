@@ -1,0 +1,40 @@
+.header-text {
+  width: 320px;
+  padding-top: 90px;
+  padding-bottom: 85px;
+  display: flex;
+  justify-content: center;
+  background-color: #81B3B8;
+  background-image:
+  url(../../img/index/header-triangle-mobile.svg),
+  url(../../img/index/back-head-mobile.jpg);
+  background-position-y: 100.1%;
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    padding-top: 73px;
+    background-image:
+    url(../../img/index/header-triangle-tablet.svg),
+    url(../../img/index/back-head-tablet.jpg);
+    background-size: 100%;
+    background-position: bottom, center;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1280px;
+    margin: 0;
+    background-image:
+    url(../../img/index/header-triangle-desktop.svg),
+    url(../../img/index/back-head-desktop.jpg);
+    background-size: 100%;
+    background-position: bottom, center;
+  }
+}
+
+.header-text__image {
+  @media (min-width: $tablet-width) {
+    width: 461px;
+    height: 350px;
+  }
+}

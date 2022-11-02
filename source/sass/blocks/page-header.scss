@@ -1,12 +1,11 @@
 .page-header {
   display: flex;
   flex-direction: column;
-}
-
-.page-header__logo {
-  order: 2;
 
   @media (min-width: $tablet-width) {
-    order: 0;
   }
+}
+
+.page-header__background-text {
+  margin: 0 auto;
 }

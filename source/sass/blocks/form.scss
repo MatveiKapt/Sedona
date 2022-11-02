@@ -9,4 +9,38 @@
 .form__fieldset {
   margin: 0;
   padding: 0;
+
+  &--emotions {
+    display: flex;
+    flex-direction: column;
+  }
+  &--impression {
+    @media (min-width: $tablet-width) {
+      order: -1;
+    }
+  }
+
+  &--contacts,
+  &--attractions,
+  &--emotions {
+    @media (min-width: $tablet-width) {
+      grid-column: 1 / -1;
+    }
+  }
+}
+
+.form__bottom-wrapper {
+  @media (min-width:$tablet-width) {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.form__obligatory-areas {
+  display: none;
+
+  @media (min-width:$tablet-width) {
+    display: block;
+  }
 }

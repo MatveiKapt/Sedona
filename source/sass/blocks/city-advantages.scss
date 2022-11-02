@@ -1,19 +1,33 @@
 .city-advantages {
+  padding: 35px 20px;
   list-style: none;
   background-color: $white;
   text-transform: uppercase;
+  text-align: left;
 
   @media (min-width: $tablet-width) {
     display: flex;
   }
 }
 
+.city-advantages__item {
+  margin-bottom: 26px;
+  padding-left: 48px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
 .city-advantages__title {
-  @include fontSizeHeightWeight(18px, 15px, 700);
+  margin: 0;
+  margin-bottom: 15px;
+  @include fontSizeHeightWeight(18px, 26px, 700);
   color: $black;
 }
 
 .city-advantages__text {
-  @include fontSizeHeightWeight(21px, 26px);
+  margin: 0;
+  @include fontSizeHeightWeight(14px, 21px);
   color: $secondary-color;
 }

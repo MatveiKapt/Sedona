@@ -1,0 +1,17 @@
+.advantages-list {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.advantages-list__item {
+
+  &--pic {
+    @media (min-width: $tablet-width) {
+      grid-column: 1 / -1;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}

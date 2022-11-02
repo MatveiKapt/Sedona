@@ -43,47 +43,49 @@
           Страницы для отправки Вашего отзыва
         </h1>
         <section class="page-main__intro intro">
-            <h2 class="intro__title title">
-              Оставьте свой отзыв
-            </h2>
-            <p class="intro__subtitle subtitle">
-              Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных Вами достопримечательностях
-            </p>
+          <h2 class="intro__title title">
+            Оставьте свой отзыв
+          </h2>
+          <p class="intro__subtitle subtitle">
+            Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных Вами достопримечательностях
+          </p>
         </section>
         <section class="review">
           <div class="review__wrapper">
             <h2 class="visually-hidden">Форма отзыва</h2>
             <form class="review__form form" action="https://echo.htmlacademy.ru/" method="get">
               <fieldset class="form__fieldset fieldset">
-                  <legend class="fieldset__title title">
-                    Представьтесь:
-                  </legend>
-                  <ul class="fieldset__list">
-                    <li class="fieldset__item input-text">
-                      <label class="fieldset__label input-text__label" for="user-name">
-                        Имя*:
-                      </label>
-                      <input class="fieldset__input-text input-text__input" type="text" id="user-name" name="user-name" placeholder="Петр">
-                    </li>
-                    <li class="fieldset__item input-text">
-                      <label class="fieldset__label input-text__label" for="user-surname">
-                        Фамилия*:
-                      </label>
-                      <input class="fieldset__input-text input-text__input" type="text" id="user-surname" name="user-surname" placeholder="Иванов">
-                    </li>
-                    <li class="fieldset__item input-text">
-                      <label class="fieldset__label input-text__label" for="user-patronymic">
-                        Отчество
-                      </label>
-                      <input class="fieldset__input-text input-text__input" type="text" id="user-patronymic" name="user-patronymic" placeholder="Александрович">
-                    </li>
-                  </ul>
+                  <div class="fieldset__inner">
+                    <legend class="fieldset__title title">
+                      Представьтесь:
+                    </legend>
+                    <ul class="fieldset__list">
+                      <li class="fieldset__item input-text input-text--yourself">
+                        <label class="fieldset__label input-text__label" for="user-name">
+                          Имя*:
+                        </label>
+                        <input class="fieldset__input-text input-text__input" type="text" id="user-name" name="user-name" placeholder="Петр">
+                      </li>
+                      <li class="fieldset__item input-text input-text--yourself">
+                        <label class="fieldset__label input-text__label" for="user-surname">
+                          Фамилия*:
+                        </label>
+                        <input class="fieldset__input-text input-text__input" type="text" id="user-surname" name="user-surname" placeholder="Иванов">
+                      </li>
+                      <li class="fieldset__item input-text input-text--yourself">
+                        <label class="fieldset__label input-text__label" for="user-patronymic">
+                          Отчество
+                        </label>
+                        <input class="fieldset__input-text input-text__input" type="text" id="user-patronymic" name="user-patronymic" placeholder="Александрович">
+                      </li>
+                    </ul>
+                  </div>
               </fieldset>
-              <fieldset class="form__fieldset fieldset fieldset--contacts">
+              <fieldset class="form__fieldset--contacts fieldset">
                   <legend class="fieldset__title title">
                     Контактная информация:
                   </legend>
-                  <ul class="fieldset__list">
+                  <ul class="fieldset__list fieldset__list--contacts">
                     <li class="fieldset__item input-text">
                       <label class="fieldset__label input-text__label" for="user-phone">
                         Контактный телефон*:
@@ -98,7 +100,7 @@
                     </li>
                   </ul>
               </fieldset>
-              <fieldset class="form__fieldset fieldset fieldset--impression checkbox-radio-fieldset">
+              <fieldset class="form__fieldset--impression fieldset checkbox-radio-fieldset">
                   <legend class="fieldset__title title">
                     Ваше общее впечатление:
                   </legend>
@@ -123,11 +125,11 @@
                     </li>
                   </ul>
               </fieldset>
-              <fieldset class="form__fieldset fieldset fieldset--attractions checkbox-radio-fieldset">
+              <fieldset class="form__fieldset--attractions fieldset checkbox-radio-fieldset">
                   <legend class="fieldset__title title">
                     Посещенные достопримечательности:
                   </legend>
-                  <ul class="fieldset__list">
+                  <ul class="fieldset__list fieldset__list--attractions">
                     <li class="fieldset__item checkbox">
                       <input class="fieldset__input-checkbox checkbox__input" type="checkbox" id="attraction-bridge" name="attractions" value="bridge" checked>
                       <label class="fieldset__label checkbox__label" for="attraction-bridge">
@@ -154,7 +156,7 @@
                     </li>
                   </ul>
               </fieldset>
-              <fieldset class="form__fieldset fieldset fieldset--emotions">
+              <fieldset class="form__fieldset--emotions fieldset">
                   <legend class="fieldset__title visually-hidden">
                     Эмоции при посещении наc
                   </legend>
@@ -163,9 +165,14 @@
                   </label>
                   <textarea class="fieldset__input-textarea input-textarea" id="emotions" name="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
               </fieldset>
+              <div class="form__bottom-wrapper">
                 <button class="form__button button" type="submit">
                   Отправить отзыв
                 </button>
+                <p class="form__obligatory-areas">
+                  * — обязательные поля
+                </p>
+              </div>
             </form>
           </div>
         </section>

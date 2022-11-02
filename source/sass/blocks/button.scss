@@ -1,4 +1,8 @@
 .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14.5px 32px;
   @include fontSizeHeightWeight(21px, 26px, 700);
   color: $white;
   text-transform: uppercase;
